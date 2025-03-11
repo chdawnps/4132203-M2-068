@@ -1,7 +1,7 @@
 // firebase-messaging-sw.js
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+importScripts("https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/8.2.6/firebase-messaging.js");
 
 self.addEventListener("notificationclick", function (event) {
   var redirectUrl = event.notification.data.FCM_MSG.notification.click_action;
@@ -23,14 +23,12 @@ self.addEventListener("notificationclick", function (event) {
 });
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBWAswZqdAu4Ai1c0ip2Bp0CqtiYznM7Vg",
-  authDomain: "namfonchada-068-02.firebaseapp.com",
-  databaseURL: "https://namfonchada-068-02-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "namfonchada-068-02",
-  storageBucket: "namfonchada-068-02.firebasestorage.app",
-  messagingSenderId: "229333537502",
-  appId: "1:229333537502:web:cfbb1065299646ec04284f",
-  measurementId: "G-71VQW2M1C4"
+  apiKey: "AIzaSyD1zdby2LT0HIbDagQEhnTJWpGQOK8QiQg",
+  authDomain: "pawitra-070-m2.firebaseapp.com",
+  projectId: "pawitra-070-m2",
+  storageBucket: "pawitra-070-m2.firebasestorage.app",
+  messagingSenderId: "813048596695",
+  appId: "1:813048596695:web:85ce071eeab5a9c36f8892"
 });
 
 const messaging = firebase.messaging();
