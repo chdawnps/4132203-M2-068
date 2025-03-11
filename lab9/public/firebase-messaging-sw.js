@@ -1,7 +1,7 @@
 // firebase-messaging-sw.js
 
-importScripts("https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js");
-importScripts("https://www.gstatic.com/firebasejs/8.2.6/firebase-messaging.js");
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
 
 self.addEventListener("notificationclick", function (event) {
   var redirectUrl = event.notification.data.FCM_MSG.notification.click_action;

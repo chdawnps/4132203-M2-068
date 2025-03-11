@@ -1,6 +1,6 @@
 // firebase.config.js
 const firebaseConfig = {
-    apiKey: "AIzaSyBWAswZqdAu4Ai1c0ip2Bp0CqtiYznM7Vg",
+  apiKey: "AIzaSyBWAswZqdAu4Ai1c0ip2Bp0CqtiYznM7Vg",
   authDomain: "namfonchada-068-02.firebaseapp.com",
   databaseURL: "https://namfonchada-068-02-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "namfonchada-068-02",
